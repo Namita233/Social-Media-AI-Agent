@@ -10,7 +10,8 @@ from openai import OpenAI
 # ---------------- OPENAI CLIENT ----------------
 
 # client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
+OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
+client = OpenAI(api_key=OPENAI_API_KEY)
 
 # --------------------------------------------------
 st.set_page_config(page_title="Social Media Agent", layout="wide")
