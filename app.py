@@ -110,7 +110,7 @@ if st.session_state.page == "welcome":
         """, unsafe_allow_html=True)
 
     with right:
-        st.video("how_to_use.mp4")
+        st.video("https://drive.google.com/uc?export=download&id=1RBNtZ8SCdULpYQlC8PR-DGNTJlzFfnWp")
         register_btn = st.button("Register", use_container_width=True)
 
         if register_btn:
