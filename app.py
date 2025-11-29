@@ -110,7 +110,18 @@ if st.session_state.page == "welcome":
         """, unsafe_allow_html=True)
 
     with right:
-        st.video("https://drive.google.com/uc?export=download&id=1RBNtZ8SCdULpYQlC8PR-DGNTJlzFfnWp")
+        # st.video("https://drive.google.com/uc?export=download&id=1RBNtZ8SCdULpYQlC8PR-DGNTJlzFfnWp")
+        st.components.v1.html(
+    f"""
+    <iframe src="https://drive.google.com/file/d/1RBNtZ8SCdULpYQlC8PR-DGNTJlzFfnWp/preview" 
+            width="100%" 
+            height="400" 
+            allow="autoplay">
+    </iframe>
+    """,
+    height=430
+)
+
         register_btn = st.button("Register", use_container_width=True)
 
         if register_btn:
